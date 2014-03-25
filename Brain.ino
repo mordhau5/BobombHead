@@ -1,4 +1,4 @@
-Brain
+/*Brain
 
 Sequence sequence //current sequence being processed
 
@@ -23,4 +23,4 @@ Event process_sequence(){
 		pop_event_off_sequence()
 		return the event
 	}
-}
+}*/

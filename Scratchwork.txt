@@ -1,0 +1,44 @@
+3.20.14
+Peripherals
+	-LeftEyeTopServo,0
+	-LeftEyeBottomServo,1
+	-RightEyeTopServo,2
+	-RightEyeBottomServo,3
+	-LeftEyeRLED,4
+	-LeftEyeWLED,5
+	-RightEyeRLED,6
+	-RightEyeWLED,7
+	-EmoteLED,8
+	-SmokeGen,9
+	-TurnkeyMotor,10
+	-FuseRLED1,11
+	-FuseGLED1,12
+	-FuseBLED1,13
+	-FuseRLED2,14
+	-FuseGLED2,15
+	-FuseBLED2,16
+	-FuseRLED3,17
+	-FuseGLED3,18
+	-FuseBLED3,19
+	-FanIntake,20
+	-FanExhaust,21
+Sequences (20, 21 always on)
+	-Normal: “The normal, calm state.”: [0,1,2,3 off],[4,6 off],[5,7 ~50-70%],[8 off],[9 off],[10 slow],[11-19 off]
+	-Sleepy: “Droopy”:
+	-Haywire: “Going apeshit, malfunctioning":
+	-Angry: :
+	-Furious: :
+	-Lit: :
+	-Blown: “Post-explosion”:
+
+Objects
+	-Bobomb(HAS a body) (sets up globals, constants, sequences)
+	-Body (HAS a fuse, key, face, mouth, and brain) (waits for events, sends event params to body parts)
+	-Brain (accepts triggers, process sequences, launches events)
+	-Face (HAS an eye(left), eye(right), and vein)
+	-Fuse (HAS three leds(RGB) and a smokegen) (ignites, smokes, sparks, diffuses)
+	-Eye (HAS a servo(top), servo(bottom), and led(RGBW) ) (changes brightness, changes color, flashes, goes off, moves eyelids)
+	-Vein (HAS an led(R)) (changes brightness, flashes, goes off)
+	-Key (HAS a motor) (spins, changes direction, halts)
+	-Mouth?
+
