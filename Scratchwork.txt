@@ -1,9 +1,11 @@
-3.20.14
-Peripherals
-	-LeftEyeTopServo,0
-	-LeftEyeBottomServo,1
-	-RightEyeTopServo,2
-	-RightEyeBottomServo,3
+/*
+	NOTES AND SCRATCHWORK
+*/
+"PERIPHERALS"
+	-leftEyeTopServo,0
+	-leftEyeBottomServo,1
+	-rightEyeTopServo,2
+	-rightEyeBottomServo,3
 	-LeftEyeRLED,4
 	-LeftEyeWLED,5
 	-RightEyeRLED,6
@@ -22,23 +24,23 @@ Peripherals
 	-FuseBLED3,19
 	-FanIntake,20
 	-FanExhaust,21
-Sequences (20, 21 always on)
+	-{Types of devices: Servo(PWM (byte)), DC-Motor(), LED(PWM (byte)), Fan(?? possibly just power no control), Smoke(??)}
+
+"SEQUENCES"(20, 21 always on)
 	-Normal: “The normal, calm state.”: [0,1,2,3 off],[4,6 off],[5,7 ~50-70%],[8 off],[9 off],[10 slow],[11-19 off]
-	-Sleepy: “Droopy”:
-	-Haywire: “Going apeshit, malfunctioning":
+	-Sleepy: 'Droopy':
+	-Haywire: 'Going apeshit, malfunctioning'
 	-Angry: :
 	-Furious: :
 	-Lit: :
-	-Blown: “Post-explosion”:
+	-Blown: “Post-explosion”
 
-Objects
-	-Bobomb(HAS a body) (sets up globals, constants, sequences)
-	-Body (HAS a fuse, key, face, mouth, and brain) (waits for events, sends event params to body parts)
-	-Brain (accepts triggers, process sequences, launches events)
-	-Face (HAS an eye(left), eye(right), and vein)
-	-Fuse (HAS three leds(RGB) and a smokegen) (ignites, smokes, sparks, diffuses)
-	-Eye (HAS a servo(top), servo(bottom), and led(RGBW) ) (changes brightness, changes color, flashes, goes off, moves eyelids)
-	-Vein (HAS an led(R)) (changes brightness, flashes, goes off)
-	-Key (HAS a motor) (spins, changes direction, halts)
+"OBJECTS"
+	-Bobomb //(HAS a body) (sets up globals, constants, sequences)
+	-Body //(HAS a fuse, eye(left), eye(right), vein, key, face, mouth, and brain) (waits for events, sends event params to body parts)
+	-Brain //(accepts triggers, process sequences, launches events)
+	-Fuse //(HAS three leds(RGB) and a smokegen) (ignites, smokes, sparks, diffuses)
+	-Eye //(HAS a servo(top), servo(bottom), and led(RGBW) ) (changes brightness, changes color, flashes, goes off, moves eyelids)
+	-Vein //(HAS an led(R)) (changes brightness, flashes, goes off)
+	-Key //(HAS a motor) (spins, changes direction, halts)
 	-Mouth?
-

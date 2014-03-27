@@ -1,9 +1,13 @@
 #include <BODY.h>
 
+//objects
 BODY body;
 
-void setup(){
+//hardware info
 
+
+void setup(){
+	//give the body declared hardware
 }
 
 void loop(){

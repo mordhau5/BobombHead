@@ -8,6 +8,7 @@ public:
 	BODY();
 	~BODY();
 	void nothing();
+	void doOps();
 };
 
 #endif

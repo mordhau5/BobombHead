@@ -17,3 +17,7 @@ BODY::~BODY(){/*nothing to destruct*/}
 void BODY::nothing(){
 	//does nothing
 }
+
+void BODY::doOps(){
+	
+}
