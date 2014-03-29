@@ -44,3 +44,19 @@
 	-Vein //(HAS an led(R)) (changes brightness, flashes, goes off)
 	-Key //(HAS a motor) (spins, changes direction, halts)
 	-Mouth?
+
+
+
+
+{
+-45 frames in 1.5 seconds
+-30 Frames in a second
+-15 frames in 500 ms 
+-7.5 frames in 250 ms
+ ---> .0333 frames/ms
+ If I can generate .0333 fpms then I need to wait about 1 ms between rendering output for each device
+}
+
+
+
+
