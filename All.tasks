@@ -1,15 +1,18 @@
 DEVELOPMENT:
   Dev related tasks
+  ☐ Randomly generated sequence #(must be able to put events in order and they can't conflict with each other) @today
   MODULES:
-    ☐ ./Body.cpp
-    ☐ ./Brain.cpp
+    ☐ ./Event.cpp
+    ☐ ./Body.cpp ??
+    ☐ ./Brain.cpp ??
   ☐ 
 
 --- ✄ -------------------------
 
 PURCHASING:
   ☐ Lead-acid 6V @Battery #(http://www.amazon.com/Powersonic-PS-6100F1-Battery-Fast--Connector/dp/B0002ILJYQ/ref=sr_1_1?s=industrial&ie=UTF8&qid=1395380787&sr=1-1)
-  ☐ Arduino/Breadboard tray (no link yet)
+  ✔ Arduino/Breadboard tray (no link yet, sparkfun) @done (14-03-31 11:16)
+  ☐ Schmitt Trigger @ #(http://www.newark.com/stmicroelectronics/m74hc14b1r/ic-hex-inverter-schmitt-trigger/dp/89K0862)
 
 REFERENCES:
   ☐ T220 MOSFETs, en masse @ #(http://getitmade.com.au/Mosfet-Switching-Bank)
@@ -19,10 +22,13 @@ REFERENCES:
   ☐ 2D Arrays 
      ☐ @Using old method #(http://opensourcehardwaregroup.com/tutorial-24-multi-dimensional-arrays-aka-matrix-old-version/)        
      ☐ @using pointers #(http://garagelab.com/profiles/blogs/tutorial-array-of-arrays-in-arduino)
+  ☐ Safe Area Operation #(http://hackaday.com/2014/03/21/hackaday-video-safe-area-operation-for-components-and-helicopters/)
+  ☐ 
 
 LEARNING:
  ☐ What are structs in arduino?
 
 ORGANIZATIONAL:
   ☐ Copy notes from notepad @include pg. and figure nos for diagrams
-  ☐ 
+  ☐ Look more into documentation
+  ☐ Github Issues @Integration?

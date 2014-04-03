@@ -59,4 +59,15 @@
 
 
 
-
+Generating a new sequence randomly:
+	Constraints on events:
+		Final Values: 
+			-can be completely random
+		Initial values: 
+			-can be random {within a range acceptable by the peripheral} -but additional Events on the same peripheral SHOULD not break its state {ie ends on 255 and picks up again at 50}
+		Event runtime: 
+			-can be random but should probably be within a certain range so the results can be observed easily
+		Event Start Time:
+			-New events must begin no earlier than the previous one on the timeline
+			-A new event on the same peripheral cannot begin before that peripherals runtime is up before it completes
+			-need to consider leaving a tolerance time between events on the same peripheral
