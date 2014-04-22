@@ -71,3 +71,12 @@ Generating a new sequence randomly:
 			-New events must begin no earlier than the previous one on the timeline
 			-A new event on the same peripheral cannot begin before that peripherals runtime is up before it completes
 			-need to consider leaving a tolerance time between events on the same peripheral
+
+As of now (4/14) For an event to operate, it has to:
+	-A) Have a start time before the current time
+	-B) Not be completed
+	-C) Have an op time before the current time
+^^ Need to condense this ^^
+	Maybe Op time and start time can be combined?
+		-By saying that the start time is the op time (initially) that covers it getting started the first time around
+		-Then each time it gets an operation that time can be incremented by the Time between ops set by the event

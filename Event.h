@@ -9,6 +9,12 @@ public:
 	~EVENT();
 	void nothing();
 	String toString();
+private:
+	byte goalValue;
+	byte* devicePtr;
+	unsigned long startTime;
+	unsigned int opGapTime;
+
 };
 
 #endif

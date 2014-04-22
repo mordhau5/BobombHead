@@ -1,6 +1,6 @@
 DEVELOPMENT:
   Dev related tasks
-  ☐ Randomly generated sequence #(must be able to put events in order and they can't conflict with each other) @today
+  ✔ Randomly generated sequence #(must be able to put events in order and they can't conflict with each other) @today @done (14-04-03 17:54)
   MODULES:
     ☐ ./Event.cpp
     ☐ ./Body.cpp ??

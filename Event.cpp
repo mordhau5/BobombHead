@@ -2,7 +2,7 @@
 
 /*
 ****EVENT OBJECT****
-An event is a (linear) instruction for a specific device. It could be changing the analog value on a led,
+An event is a (linear) instruction for a specific device. It could be changing the analog value on an led,
 or moving a Servo to a given position. An event is a time-based concept, and the action it corresponds to 
 can take place over any given period.
 
@@ -20,18 +20,24 @@ thus completing the link.
 ****Debating whether or not to store the event runtime or calculate it when it's needed, since it technically
 doesn't need to be accessed when inside of event processing (where speed is crucial for timings).****
 
-[Goal Value, Step Instruction, Timeline(start time), Time b/w Ops, referenceID for a Device, head event, tail event]
+[completed(bit), Timeline(start time)(unsigned long), Time b/w Ops(unsigned int), Goal Value(byte), referenceID for a Device(byte?), FunctionID(byte), Step Value(byte)]
 */
 
+byte goalValue;
+byte* devicePtr;
+unsigned long startTime;
+unsigned int opGapTime; //may be able to get away with byte here, we'll see. would be the diff between 8.5-12.5s and waaaay more.
+//Event* head;
+//Event* tail;
+
 EVENT::EVENT(){
-    //pinMode(LED_PIN, OUTPUT); //make that pin an OUTPUT
 }
 
 //<<destructor>>
 EVENT::~EVENT(){/*nothing to destruct*/}
 
 void EVENT::nothing(){
-	//does nothing
+	startTime = 56;
 }
 
 String EVENT::toString(){
